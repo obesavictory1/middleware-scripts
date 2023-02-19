@@ -4,9 +4,9 @@
 # Date: 02/19/2023
 # Description: SonarQube installation
 
-su - vagrant
+#su - vagrant
 
-sudo yum update -y
+#sudo yum update -y
 
 sudo yum install java-11-openjdk-devel -y
 
@@ -23,6 +23,14 @@ sudo yum install unzip
 sudo unzip /opt/sonarqube-9.3.0.51899.zip
 
 sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899
+
+sudo yum install firewalld
+
+sudo systemctl enable firewalld
+
+sudo systemctl start firewalld
+
+sudo systemctl status firewalld
 
 cd /opt/sonarqube-x.x/bin/linux-x86-64 
 

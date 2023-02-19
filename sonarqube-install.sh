@@ -6,7 +6,7 @@
 
 #su - vagrant
 
-#sudo yum update -y
+sudo yum update -y
 
 sudo yum install java-11-openjdk-devel -y
 

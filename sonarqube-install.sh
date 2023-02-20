@@ -24,7 +24,7 @@ sudo unzip /opt/sonarqube-9.3.0.51899.zip
 
 sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899
 
-sudo yum install firewalld
+#sudo yum install firewalld
 
 sudo systemctl enable firewalld
 
@@ -32,7 +32,7 @@ sudo systemctl start firewalld
 
 sudo systemctl status firewalld
 
-cd /opt/sonarqube-x.x/bin/linux-x86-64 
+cd /opt/sonarqube-9.3.0.51899/bin/linux-x86-64 
 
  ./sonar.sh start
 
